@@ -5,3 +5,4 @@ kind: Kustomization
 resources:
   - cr-config.yml
   - cluster-admin-gitops.yml
+  - install.yml

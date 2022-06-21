@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: bootstrap/overlays/default
-    repoURL: git@github.com/mabehiro/ocp-gitops-applicationset.git
+    repoURL: https://github.com/mabehiro/ocp-gitops-applicationset.git
     targetRevision: main
   syncPolicy:
     automated:

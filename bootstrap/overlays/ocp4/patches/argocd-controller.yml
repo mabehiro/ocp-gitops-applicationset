@@ -8,4 +8,4 @@
 
 - op: replace
   path: /spec/source/repoURL
-  value: "git@github.com/mabehiro/ocp-gitops-applicationset.git"
+  value: "https://github.com/mabehiro/ocp-gitops-applicationset.git"

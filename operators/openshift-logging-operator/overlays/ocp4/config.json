@@ -13,7 +13,7 @@
         "limit": "-1"
     },
     "source": {
-        "repoURL": "git@github.com/mabehiro/ocp-gitops-applicationset.git",
+        "repoURL": "https://github.com/mabehiro/ocp-gitops-applicationset.git",
         "targetRevision": "main",
         "overlayPath": "overlays/ocp4"
     }

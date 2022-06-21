@@ -2,7 +2,7 @@
   path: /spec/generators
   value:
     - git:
-        repoURL: git@github.com/mabehiro/ocp-gitops-applicationset.git
+        repoURL: https://github.com/mabehiro/ocp-gitops-applicationset.git
         revision: main
         files:
         - path: "operators/**/overlays/ocp4/config.json"

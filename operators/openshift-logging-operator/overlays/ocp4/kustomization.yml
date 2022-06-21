@@ -6,7 +6,7 @@ commonAnnotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     
 bases:
-  - ../../../../base
+  - ../../../base
 
 patchesStrategicMerge:
   - ./patches/logging-target.yml

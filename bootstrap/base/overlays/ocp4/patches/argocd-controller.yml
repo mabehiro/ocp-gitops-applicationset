@@ -1,0 +1,11 @@
+- op: replace
+  path: /spec/source/path
+  value: "bootstrap/overlays/ocp4"
+
+- op: replace
+  path: /spec/source/targetRevision
+  value: "main"
+
+- op: replace
+  path: /spec/source/repoURL
+  value: "git@github.com/mabehiro/ocp-gitops-applicationset.git"

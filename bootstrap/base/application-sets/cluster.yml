@@ -1,0 +1,40 @@
+
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: telco-cloud-core-configuration
+  namespace: openshift-gitops
+spec:
+  generators: []
+  template:
+    metadata:
+      name: '{{name}}'
+      annotations:
+        argocd.argoproj.io/sync-wave: "{{syncWave}}"
+        argocd.argoproj.io/compare-options: '{{compareOptions}}'
+    spec:
+      project: '{{project}}'
+      syncPolicy:
+        automated:
+          selfHeal: true 
+          allowEmpty: true
+        syncOptions:
+          - CreateNamespace=true
+        retry:
+          limit: -1
+          backoff:
+            duration: 15s
+            factor: 2
+            maxDuration: 2m
+      source:
+        repoURL: '{{source.repoURL}}'
+        targetRevision: '{{source.targetRevision}}'
+        path: '{{rootDirectory}}/{{name}}/{{source.overlayPath}}'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: "{{destinationNamespace}}"
+      ignoreDifferences:
+        - group: kyverno.io
+          kind: ClusterPolicy
+          jqPathExpressions:
+            - .spec.rules[] 

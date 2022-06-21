@@ -1,0 +1,15 @@
+---
+# This patch will change the syslog logging target
+apiVersion: "logging.openshift.io/v1"
+kind: "ClusterLogForwarder"
+metadata:
+  name: "instance"
+  namespace: openshift-logging
+spec:
+  outputs:
+    - name: relic-out
+      type: syslog
+      syslog:
+        facility: local0
+        severity: informational
+      url: 'udp://10.228.29.146:514'

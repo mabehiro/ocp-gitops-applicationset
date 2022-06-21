@@ -1,0 +1,7 @@
+- op: replace
+  path: /spec/channel
+  value: '4.9'
+  
+- op: replace
+  path: /spec/source
+  value: 'telco-cloud-redhat-operator-catalog'

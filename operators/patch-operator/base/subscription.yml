@@ -1,12 +1,4 @@
 ---
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: patch-operator
-  labels:
-    openshift.io/cluster-monitoring: "true"
-
----
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:

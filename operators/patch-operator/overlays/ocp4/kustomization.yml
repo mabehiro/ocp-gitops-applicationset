@@ -9,10 +9,3 @@ bases:
   - ../../base
 
 patchesJson6902:
-  - target:
-      group: operators.coreos.com
-      version: v1alpha1
-      kind: Subscription
-      name: patch-operator-subscription
-      namespace: telco-cloud-patch-operator
-    path: ./patches/subscription-channel.yml

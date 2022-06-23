@@ -8,9 +8,6 @@ commonAnnotations:
 bases:
   - ../../base
 
-patchesStrategicMerge:
-- patch.yml
-
 patchesJson6902:
   - target:
       group: operators.coreos.com

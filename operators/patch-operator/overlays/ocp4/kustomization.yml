@@ -8,4 +8,7 @@ commonAnnotations:
 bases:
   - ../../base
 
+patchesStrategicMerge:
+- patch.yml
+
 patchesJson6902:

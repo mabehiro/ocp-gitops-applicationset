@@ -1,0 +1,20 @@
+{
+    "project": "default",
+    "syncWave": "-47",
+    "compareOptions": "IgnoreExtraneous",
+    "name": "machine-configs",
+    "destinationNamespace": "",
+    "rootDirectory": "operators",
+    "automated": {
+        "prune": true,
+        "selfHeal": true
+    },
+    "retry": {
+        "limit": "-1"
+    },
+    "source": {
+        "repoURL": "https://github.com/mabehiro/ocp-gitops-applicationset.git",
+        "targetRevision": "main",
+        "overlayPath": "overlays/ocp4"
+    }
+}

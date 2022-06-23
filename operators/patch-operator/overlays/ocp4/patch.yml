@@ -9,7 +9,7 @@ spec:
       patchTemplate: |
         metadata:
           labels:
-            node-role.kubernetes.io/worker-sriov
+            node-role.kubernetes.io/worker-sriov: ""
       patchType: application/strategic-merge-patch+json
       targetObjectRef:
         apiVersion: v1

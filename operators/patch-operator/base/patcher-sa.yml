@@ -3,6 +3,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: node-label-patcher
+  namespace: patch-operator
 
 
 ---

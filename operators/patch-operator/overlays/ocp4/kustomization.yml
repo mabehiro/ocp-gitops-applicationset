@@ -9,6 +9,6 @@ bases:
   - ../../base
 
 patchesStrategicMerge:
-- patch.yml
+  - patch.yml
 
 patchesJson6902:

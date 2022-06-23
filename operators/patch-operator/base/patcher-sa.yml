@@ -29,3 +29,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: node-label-patcher
+    namespace: patch-operator

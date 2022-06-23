@@ -15,11 +15,11 @@ spec:
         apiVersion: v1
         kind: Node
         labelSelector:
-		  matchExpressions:
+        matchExpressions:
           - key: kubernetes.io/hostname
             operator: In
             values:
             - worker01
-			      - worker02
+            - worker02
   serviceAccountRef:
     name: node-label-patcher

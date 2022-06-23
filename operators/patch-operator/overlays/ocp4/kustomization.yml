@@ -5,7 +5,7 @@ kind: Kustomization
 commonAnnotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
-bases:
+resources:
   - ../../base
 
 patchesStrategicMerge:

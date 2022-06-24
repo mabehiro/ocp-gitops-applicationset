@@ -1,7 +1,7 @@
 apiVersion: redhatcop.redhat.io/v1alpha1
 kind: Patch
 metadata:
-  name: node-patch
+  name: node-patch_test
   namespace: patch-operator
 spec:
   patches:

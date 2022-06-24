@@ -9,7 +9,7 @@ spec:
       patchTemplate: |
         metadata:
           labels:
-            mabe.cloud/storage-iscsi: true 
+            mabe.cloud/storage-iscsi: "true" 
       patchType: application/strategic-merge-patch+json
       targetObjectRef:
         apiVersion: v1

@@ -8,4 +8,4 @@ spec:
       - {key: machineconfiguration.openshift.io/role, operator: In, values: [worker,worker-iscsi]}
   nodeSelector:
     matchLabels:
-      mabe.cloud/storage-iscsi: true
+      mabe.cloud/storage-iscsi: "true"

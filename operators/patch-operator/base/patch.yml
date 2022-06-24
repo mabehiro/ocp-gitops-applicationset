@@ -20,6 +20,5 @@ spec:
             operator: In
             values:
             - worker01
-            - worker02
   serviceAccountRef:
     name: node-label-patcher

@@ -6,3 +6,4 @@ commonAnnotations:
 resources:
   - ./01-sriov-pool.yml
   - ./02-iscsi-pool.yml
+  - ./02-iscsi-pool_test.yml

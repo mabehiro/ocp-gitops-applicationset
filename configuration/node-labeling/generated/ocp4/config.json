@@ -15,6 +15,6 @@
     "source": {
         "repoURL": "https://github.com/mabehiro/ocp-gitops-applicationset.git",
         "targetRevision": "main",
-        "overlayPath": "nodelabel/ocp4"
+        "overlayPath": "generated/ocp4"
     }
 }

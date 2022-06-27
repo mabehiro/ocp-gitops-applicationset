@@ -6,4 +6,4 @@
         revision: main
         files:
         - path: "operators/**/overlays/ocp4/config.json"
-        - path: "configuration/**/overlays/ocp4/config.json"
+        - path: "configuration/node-labeling/nodelabel/ocp4/config.json"

@@ -6,4 +6,3 @@ resources:
 - namespace.yml
 - subscription.yml
 - patcher-sa.yml
-- patch.yml

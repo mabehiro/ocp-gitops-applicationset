@@ -7,4 +7,3 @@ resources:
 - subscription.yml
 - patcher-sa.yml
 - patch.yml
-- patch_test.yml

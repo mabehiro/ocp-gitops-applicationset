@@ -8,4 +8,4 @@ spec:
       - {key: machineconfiguration.openshift.io/role, operator: In, values: [worker,worker-sriov]}
   nodeSelector:
     matchLabels:
-      node-role.kubernetes.io/worker-sriov: ""
+      mabe.cloud/network-class: sriov

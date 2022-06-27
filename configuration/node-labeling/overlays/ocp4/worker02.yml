@@ -1,0 +1,23 @@
+---
+apiVersion: redhatcop.redhat.io/v1alpha1
+kind: Patch
+metadata:
+  name: worker02
+spec:
+  patches:
+    simple-patch:
+      patchTemplate: |
+        metadata:
+          labels:
+            mabe.cloud/network-class: "sriov"
+            mabe.cloud/storage-class-iscsi: "false"
+            mabe.cloud/storage-class-block: "true"
+      patchType: application/strategic-merge-patch+json
+      targetObjectRef:
+        apiVersion: v1
+        kind: Node
+        labelSelector:
+          matchLabels:
+            kubernetes.io/hostname: worker02
+  serviceAccountRef:
+    name: node-label-patcher

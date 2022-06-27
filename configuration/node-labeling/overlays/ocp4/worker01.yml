@@ -1,24 +1,23 @@
+---
 apiVersion: redhatcop.redhat.io/v1alpha1
 kind: Patch
 metadata:
-  name: node-patch-test
-  namespace: patch-operator
+  name: worker01
 spec:
   patches:
     simple-patch:
       patchTemplate: |
         metadata:
           labels:
-            mabe.cloud/storage-iscsi: "true" 
+            mabe.cloud/network-class: "ovn"
+            mabe.cloud/storage-class-iscsi: "true"
+            mabe.cloud/storage-class-block: "true"
       patchType: application/strategic-merge-patch+json
       targetObjectRef:
         apiVersion: v1
         kind: Node
         labelSelector:
-          matchExpressions:
-          - key: kubernetes.io/hostname
-            operator: In
-            values:
-            - worker02
+          matchLabels:
+            kubernetes.io/hostname: worker01
   serviceAccountRef:
     name: node-label-patcher

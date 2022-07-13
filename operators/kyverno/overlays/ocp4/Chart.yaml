@@ -1,0 +1,11 @@
+apiVersion: v2
+name: kyverno-engine
+type: application
+version: 2.3.3
+appVersion: "1.6.2"
+
+dependencies:
+- name: kyverno
+  version: "v2.3.3"
+  repository: https://kyverno.github.io/kyverno/
+

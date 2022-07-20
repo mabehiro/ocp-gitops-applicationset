@@ -1,0 +1,31 @@
+---
+apiVersion: nmstate.io/v1beta1
+kind: NodeNetworkConfigurationPolicy
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "1"
+  name: worker02
+spec:
+  desiredState:
+    interfaces:
+
+    - name: enp7s0
+      type: ethernet
+      state: up
+
+    - description: Multustest
+      name: enp7s0.101
+      state: up
+      type: vlan
+      ipv4:
+        address:
+        - ip: 192.168.101.102
+          prefix-length: 24
+        enabled: true
+      vlan:
+        base-iface: enp7s0
+        id: 101
+
+  nodeSelector:
+    kubernetes.io/hostname: worker02

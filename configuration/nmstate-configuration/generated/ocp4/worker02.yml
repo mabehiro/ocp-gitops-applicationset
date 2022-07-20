@@ -14,18 +14,18 @@ spec:
       type: ethernet
       state: up
 
-    - description: Multustest
-      name: enp7s0.101
-      state: up
-      type: vlan
-      ipv4:
-        address:
-        - ip: 192.168.101.102
-          prefix-length: 24
-        enabled: true
-      vlan:
-        base-iface: enp7s0
-        id: 101
+    # - description: Multustest
+    #   name: enp7s0.101
+    #   state: up
+    #   type: vlan
+    #   ipv4:
+    #     address:
+    #     - ip: 192.168.101.102
+    #       prefix-length: 24
+    #     enabled: true
+    #   vlan:
+    #     base-iface: enp7s0
+    #     id: 101
 
   nodeSelector:
     kubernetes.io/hostname: worker02

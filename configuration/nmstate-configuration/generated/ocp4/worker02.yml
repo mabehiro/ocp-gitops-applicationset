@@ -16,16 +16,30 @@ spec:
 
     - description: Multustest
       name: enp7s0.101
-      state: absent 
+      state: up
       type: vlan
-      ipv4:
-        address:
-        - ip: 192.168.101.102
-          prefix-length: 24
-        enabled: true
+      # ipv4:
+      #   address:
+      #   - ip: 192.168.101.101
+      #     prefix-length: 24
+      #   enabled: true
       vlan:
         base-iface: enp7s0
         id: 101
 
+    - description: Multustest
+      name: enp7s0.102
+      state: up
+      type: vlan
+      # ipv4:
+      #   address:
+      #   - ip: 192.168.101.101
+      #     prefix-length: 24
+      #   enabled: true
+      vlan:
+        base-iface: enp7s0
+        id: 102
+
   nodeSelector:
-    kubernetes.io/hostname: worker02
+    kubernetes.io/hostname: worker02 
+

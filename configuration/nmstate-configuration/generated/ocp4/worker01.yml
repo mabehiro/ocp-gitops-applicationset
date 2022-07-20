@@ -15,7 +15,7 @@ spec:
       state: up
 
     - description: Multustest
-      name: enp7s0.101
+      name: enp7s0.103
       state: up
       type: vlan
       # ipv4:
@@ -25,7 +25,7 @@ spec:
       #   enabled: true
       vlan:
         base-iface: enp7s0
-        id: 101
+        id: 103
 
     - description: Multustest
       name: enp7s0.102
